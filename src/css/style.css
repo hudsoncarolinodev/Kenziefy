@@ -1,0 +1,238 @@
+body,main,aside,img,ul,li,a,section,div,p,button,h2,figure{
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background: linear-gradient(0deg, #121212, #121212), #F1F1F1;
+}
+main{
+    height:980px;
+    background: linear-gradient(0deg, #121212, #121212), #F1F1F1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebarNavegacao{
+    padding: 30px;
+    width: 23%;
+}
+.sidebarNavegacao img{
+    
+}
+.sidebarNavegacao ul{
+    margin-top: 22px;
+}
+.sidebarNavegacao ul li{
+    margin-bottom: 22px;
+}
+.sidebarNavegacao ul a{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    color: #F1F1F1;
+    position: relative;
+    max-width: 250px;
+    height: 55px;
+    border-radius: 10px;
+    display: block;
+    padding-left: 43px;
+    padding-top: 13px;
+  
+}
+.sidebarNavegacao ul a:hover{
+    background: rgba(11, 79, 255, 0.38);
+}
+.sidebarNavegacao ul a img{
+    margin-right: 20px;
+    vertical-align: bottom;
+    max-width: 30px;
+}
+.secaoMusicas{
+    background: #191414;
+    width: 77%;
+}
+.secaoMusicas header{
+    background-image: url(../img/Header.png);
+    background-position: center;
+    
+
+}
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+header>.container{
+    height: 220px;
+}
+.secaoMusicas div.user{
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-top: 20px;
+}
+.secaoMusicas div.user img{}
+.secaoMusicas div.user p{
+    color: #fff;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    margin-left: 20px;
+   
+
+}
+.secaoMusicas header .container>p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 43px;
+    /* identical to box height */
+    color: #F1F1F1;
+    text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+    position:absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+.listaMusicas{
+    height: 738px;
+}
+.listaMusicas button{
+    width: 120px;
+    height: 50px;
+    background: linear-gradient(0deg, #0047FF, #0047FF), linear-gradient(0deg, #121212, #121212), #F1F1F1;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height */
+    border: none;
+    color:#fff;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+.listaMusicas .cabecalho{
+    display: flex;
+    border-bottom: 1px solid #646464;
+    padding: 10px 20px;
+    margin-top: 25px;
+}
+.listaMusicas .cabecalho p{
+    color:#F1F1F1;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+}
+.listaMusicas .cabecalho p:nth-child(1){
+    width: 40%;
+}
+.listaMusicas .cabecalho p:nth-child(2){
+    width: 20%;
+}
+.listaMusicas .cabecalho p:nth-child(3){}
+.listaMusicas ul{
+    padding-top: 10px;
+    height: 580px;
+    overflow-y: scroll;
+}
+.listaMusicas ul li{
+    padding: 15px 20px;
+    display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 26px;
+    color: #fff;
+    border-bottom: 1px solid #646464;
+}
+.listaMusicas ul li p:nth-child(1){
+    width: 40%;
+}
+.listaMusicas ul li p:nth-child(2){
+    width: 20%;
+}
+.listaMusicas ul li p:nth-child(3){
+    width: 20%;
+}
+.player{
+    width: 100%;
+    background: linear-gradient(0deg, #121212, #121212), #F1F1F1;
+    height: 100px;
+    display: flex;
+}
+.musicaAtual{
+    display: flex;
+    color: #fff;
+    width: 23%;
+    align-items: center;
+}
+.musicaAtual figure{}
+.musicaAtual figure img{
+    margin-right: 20px;
+}
+.musicaAtual .informacaoMusica h2{}
+.musicaAtual .informacaoMusica p{}
+
+.controlesApp{
+    width: 78%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controlesApp .volume{
+    background-image: url("../img/Vector\ \(5\).png");
+    width: 100%;
+    max-width: 145px;
+    height: 20px;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+.controlesApp .volume div{
+    height: 6px;
+    background-color: #333333;
+    position: relative;
+    border-radius: 5px;
+
+}
+.controlesApp .volume span{
+    background-color: #fff;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.btnControles{}
+.btnControles button{
+    border: none;
+    background-color: transparent;
+    background-position: center;
+
+}
+.btnControles #prev{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/Group\ 15.png);
+}
+
+.btnControles #play{
+    width: 49px;
+    height: 49px;
+    background-image: url(../img/Play.png)
+}
+.btnControles #next{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/Group\ 14.png);
+}
