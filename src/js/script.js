@@ -20,19 +20,16 @@ function construirPlaylist(musica, index){
     const nomeMusica = document.createElement('p');
     const artistaMusica = document.createElement('p');
     const albumMusica = document.createElement('p');
-    const dataMusica = document.createElement('p');
 
     nomeMusica.innerText = musica.name;
     artistaMusica.innerText = musica.artist;
     albumMusica.innerText = musica.album;
-    dataMusica.innerText = '2020-01-25';
 
     musicaElemento.setAttribute('data-id', index);
     
     musicaElemento.appendChild(nomeMusica);
     musicaElemento.appendChild(artistaMusica);
     musicaElemento.appendChild(albumMusica);
-    musicaElemento.appendChild(dataMusica);
     
     musicaElemento.addEventListener('click', tocarMusica);
     
@@ -41,9 +38,13 @@ function construirPlaylist(musica, index){
 }
 
 function tocarMusica(event){
-    if(event.currentTarget.tagName === 'LI'){
-        const musicaId = event.currentTarget.dataset.id;
-        audioTag.src = baseMusicas[musicaId].path;
+    const elementoClicado = event.currentTarget;
+
+    if(elementoClicado.tagName === 'LI'){
+        const musicaId = elementoClicado.dataset.id;
+        const musicaSelecionada = baseMusicas[musicaId];
+
+        audioTag.src = musicaSelecionada.path;
         musicaAtual = Number(musicaId);
         
         audioTag.play();
