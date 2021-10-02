@@ -18,6 +18,9 @@ main{
     
     
 }
+button{
+    cursor: pointer;
+}
 .sidebarNavegacao{
     padding: 30px;
     width: 23%;
