@@ -202,14 +202,14 @@ header>.container{
     float: right;
     padding-top: 9px;
 }
-.controlesApp .volume div{
+/* .controlesApp .volume div{
     height: 6px;
     background-color: #333333;
     position: relative;
     border-radius: 5px;
 
-}
-.controlesApp .volume span{
+} */
+/* .controlesApp .volume span{
     background-color: #fff;
     width: 40%;
     height: 100%;
@@ -217,7 +217,7 @@ header>.container{
     top: 0;
     left: 0;
     border-radius: 5px;
-}
+} */
 
 .btnControles{
     display: flex;
