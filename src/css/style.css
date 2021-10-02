@@ -11,7 +11,7 @@ body{
     background: linear-gradient(0deg, #121212, #121212), #F1F1F1;
 }
 main{
-    height:980px;
+    height:100vh;
     background: linear-gradient(0deg, #121212, #121212), #F1F1F1;
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +24,7 @@ button{
 .sidebarNavegacao{
     padding: 30px;
     width: 23%;
-    height: cal(100vh - 10px);
+    height: calc(100% - 100px);
 }
 .sidebarNavegacao img{
     
@@ -107,7 +107,7 @@ header>.container{
 }
 
 .listaMusicas{
-    height: 738px;
+    height: calc(100% - 100px);
 }
 .listaMusicas button{
     width: 120px;

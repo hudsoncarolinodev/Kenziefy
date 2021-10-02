@@ -3,8 +3,9 @@
 let musicaAtual = 0;
 
 const audioTag = document.getElementById('saidaAudio');
-const listaMusicas = document.querySelector('.listaMusicas ul');
+audioTag.src = baseMusicas[musicaAtual].path;
 
+const listaMusicas = document.querySelector('.listaMusicas ul');
 const botaoPausar = document.querySelector('.listaMusicas button');
 const botaoPlay = document.getElementById('play');
 const botaoPrev = document.getElementById('prev');
@@ -46,10 +47,7 @@ function tocarMusica(event){
         musicaAtual = Number(musicaId);
         
         audioTag.play();
-    } else if(isNaN(audioTag.duration)) {
-        audioTag.src = baseMusicas[musicaAtual].path;
-        audioTag.play();
-    } else {
+    } else  {
         if(audioTag.paused){
             audioTag.play();
         } else {
