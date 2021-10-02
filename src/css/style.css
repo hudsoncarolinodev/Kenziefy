@@ -15,10 +15,13 @@ main{
     background: linear-gradient(0deg, #121212, #121212), #F1F1F1;
     display: flex;
     flex-wrap: wrap;
+    
+    
 }
 .sidebarNavegacao{
     padding: 30px;
     width: 23%;
+    height: cal(100vh - 10px);
 }
 .sidebarNavegacao img{
     
@@ -183,18 +186,18 @@ header>.container{
 .musicaAtual .informacaoMusica p{}
 
 .controlesApp{
-    width: 78%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 73%;
+    padding-top: 30px;
 }
 .controlesApp .volume{
     background-image: url("../img/Vector\ \(5\).png");
     width: 100%;
     max-width: 145px;
-    height: 20px;
+    height: 25px;
     background-repeat: no-repeat;
     padding-left: 30px;
+    float: right;
+    padding-top: 9px;
 }
 .controlesApp .volume div{
     height: 6px;
@@ -213,7 +216,11 @@ header>.container{
     border-radius: 5px;
 }
 
-.btnControles{}
+.btnControles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .btnControles button{
     border: none;
     background-color: transparent;
@@ -229,7 +236,9 @@ header>.container{
 .btnControles #play{
     width: 49px;
     height: 49px;
-    background-image: url(../img/Play.png)
+    background-image: url(../img/Play.png);
+    margin: 0 24px;
+    
 }
 .btnControles #next{
     width: 30px;
